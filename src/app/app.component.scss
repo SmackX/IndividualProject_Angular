@@ -1,0 +1,27 @@
+.course-container{
+  margin-left: 2rem;
+}
+.text-from-component{
+  margin-left: 40%;
+  border: 3px solid black;
+  width: 15rem;
+  text-align: left;
+  padding-left: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+.text-from-component-input{
+  height: 30px;
+  width: 90%;
+  margin-left: 5%;
+}
+.button-push{
+  background: #4c7ee0;
+  height: 20px;
+  width: 50px;
+  float: right;
+  margin-right: 5px;
+}
+.button-push :hover{
+  background: red;
+}
