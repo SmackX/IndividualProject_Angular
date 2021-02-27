@@ -1,0 +1,33 @@
+.box-inline-material{
+  display: inline-block;
+}
+.text-material{
+  margin-top: 4rem;
+  width: 350px;
+  font-size: 25px;
+  font-family: "Fira Code";
+  color: black;
+}
+.nav-inline-material{
+  margin-top: 3rem;
+  width: 90%;
+  margin-left: 5rem;
+}
+.box-button-material{
+  width: 150px;
+}
+.button-material{
+  width: 200px;
+  margin-top: 25px;
+  height: 40px;
+  background: #63b175;
+  color: white;
+  font-family: "Fira Code";
+  font-size: 27px;
+}
+.img-material{
+  margin: 40px;
+}
+.button-material:hover{
+  background: #0f3d15;
+}

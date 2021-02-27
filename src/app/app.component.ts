@@ -1,5 +1,5 @@
 import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
-import { CourseContainerComponent } from './course-container/course-container.component';
+import { CourseContainerComponent } from './home/course-container/course-container.component';
 
 @Component({
   selector: 'app-root',

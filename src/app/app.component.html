@@ -1,11 +1,29 @@
-<app-header></app-header>
+<router-outlet>
+<nav>
+  <ul>
+    <li class="nav-item active">
+      <a class="nav-link" routerLink="">Baedung
+        <span class="sr-only"></span>
+      </a>
+    </li>
+    <li class="nav-item center-class">
+      <a class="nav-link link-center" routerLink="Home">Home</a>
+      <a class="nav-link link-center" routerLink="Start">Start Course</a>
+      <a class="nav-link link-center">Features</a>
+    </li>
+    <li class="nav-item LogIn">
+      <a class="nav-link LogIn">LogIn</a>
+    </li>
+  </ul>
+</nav>
+</router-outlet>
+<!--<app-header></app-header>
 <br>
 <div class="text-from-component">
   <input class="text-from-component-input" type="text" [(ngModel)]="ChildData" (ngModelChange)="OnChange($event)"> {{" > "+ChildData}}
 
 </div>
-<br>
-<app-main-container></app-main-container>
+<br> <app-main-container></app-main-container>
 <app-main-container></app-main-container>
 <app-course-container class="course-container" [ChildData]="ChildData"></app-course-container>
 <app-course-container class="course-container"></app-course-container>
@@ -13,3 +31,4 @@
 <app-course-container class="course-container"></app-course-container>
 <app-course-container class="course-container"></app-course-container>
 <app-course-container class="course-container"></app-course-container>
+-->
