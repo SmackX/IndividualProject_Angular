@@ -11,12 +11,18 @@ import { FormsModule } from '@angular/forms';
 import { StartCourseComponent } from './start-course/start-course.component';
 import { HomeComponent } from './home/home.component';
 import { MaterialComponent } from './start-course/material/material.component';
+import { AuthorizationComponent } from './authorization/authorization.component';
+import { RegistrationComponent } from './registration/registration.component';
+import { LoginComponent } from './login/login.component';
 
 
 const appRouter: Routes = [
-  { path: '', component: AppComponent },
+  { path: '', component: HomeComponent },
   { path: 'Home', component: HomeComponent },
-  { path: 'Start', component: StartCourseComponent }
+  { path: 'Start', component: StartCourseComponent },
+  { path: 'Registration', component: RegistrationComponent },
+  { path: 'LogIn', component: AuthorizationComponent },
+  { path: 'Log', component: LoginComponent }
 ]
 
 @NgModule({
@@ -27,6 +33,9 @@ const appRouter: Routes = [
     StartCourseComponent,
     HomeComponent,
     MaterialComponent,
+    AuthorizationComponent,
+    RegistrationComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,

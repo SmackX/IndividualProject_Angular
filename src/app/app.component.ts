@@ -9,6 +9,7 @@ import { CourseContainerComponent } from './home/course-container/course-contain
 })
 export class AppComponent {
   public ChildData = 'Hello';
+  toDate = Date.now();
   // tslint:disable-next-line:typedef
   OnChange(InputValue: string){
     this.ChildData = InputValue;

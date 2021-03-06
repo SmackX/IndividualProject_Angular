@@ -1,0 +1,41 @@
+<div class="main-div-registration">
+  <div class="center-div-reg">
+    <div><h1>Create profile</h1></div>
+    <div class="fill-div"></div>
+    <p>Name:</p>
+    <input class="input-reg" type="text" name="Name" placeholder="Something" size="30" [(ngModel)]="text1">
+    <div class="fill-div"></div>
+    <p>Surname:</p>
+    <input class="input-reg" type="text" name="Surname" placeholder="Something" size="30" [(ngModel)]="text2">
+    <div class="fill-div"></div>
+    <p>Age:</p>
+    <input class="input-reg" type="text" name="Age" placeholder="Something" size="30" [(ngModel)]="text3">
+    <div class="fill-div"></div>
+    <p>Gender:</p>
+    <input class="input-reg" type="text" name="Gender" placeholder="Something" size="30" [(ngModel)]="text4">
+    <div class="fill-div"></div>
+    <p>Were are you from?</p>
+    <input class="input-reg" type="text" name="Country" placeholder="Something" size="30" [(ngModel)]="text5">
+    <hr id="HrInDiv">
+    <input id="reg-button" type="button" value="Register" name="buttonClick" (click)="Push()">
+  </div>
+</div>
+
+<div class="main-div-registration main-div-reg-second">
+  <div class="center-div-reg">
+    <tr>
+      <td class="td-output">Your enter:</td>
+      <td class="td-output">Your enter:</td>
+      <td class="td-output">Your enter:</td>
+      <td class="td-output">Your enter:</td>
+      <td class="td-output">Your enter:</td>
+    </tr>
+    <tr *ngFor="let item of items">
+      <td class="td-output">{{item.Text1 | uppercase}}</td>
+      <td class="td-output">{{item.Text2 | uppercase}}</td>
+      <td class="td-output">{{item.Text3 | number : '1.0-0'}}</td>
+      <td class="td-output">{{item.Text4 | lowercase}}</td>
+      <td class="td-output">{{item.Text5 | uppercase}}</td>
+    </tr>
+  </div>
+</div>

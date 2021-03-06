@@ -1,0 +1,61 @@
+.center-author{
+  margin-top: 15rem;
+  background: #2C4CC4;
+  background: linear-gradient(to right top, red, #19247B );
+  opacity: 0.7;
+  width: 35%;
+  margin-left: 50%;
+  height: 20rem;
+  border-radius: 2rem;
+}
+.social-connect{
+  height: 70%;
+  border-radius: 2rem;
+}
+.social-connect-div{
+  width: 100%;
+  margin: 20%;
+  height: 80%;
+  margin-top: 20%;
+  padding-top: 5%;
+  margin-left: 5%;
+
+}
+.span-social-connect{
+  margin-left: 1rem;
+  font-size: 2rem;
+  width: 100%;
+  color: white;
+}
+
+.span-social-connect:hover{
+  color: black;
+}
+
+.button-click-registration{
+  margin-left: 5rem;
+  display: inline-block;
+  width: 90px;
+  background: #e0e0e0;
+  height: 30px;
+  border-radius: 10px;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+a:hover{
+  color: black;
+}
+button {
+  background: #30477b;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  border-radius: 10px;
+  font-family: "Fira Code Light";
+}
+
+body{
+  background-image: url("//previews.123rf.com/images/peshkov/peshkov1905/peshkov190500374/128578729-abstract-glowing-circuit-coding-background-programming-and-technology-concept-3d-rendering.jpg");
+}
