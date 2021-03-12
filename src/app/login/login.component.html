@@ -3,6 +3,7 @@
     <div class="profile-div">
       <img src="{{profileImage}}">
     </div>
+
     <div class="profile-div">
       <tr class="table-ngFor">
         <td class="profile-table">Name:   </td>
@@ -11,13 +12,14 @@
         <td class="profile-table">Gender:</td>
         <td class="profile-table">Country:</td>
       </tr>
-      <tr class="table-ngFor" *ngFor="let item of items">
-        <td class="profile-table"> {{item.Text1}}</td>
-        <td class="profile-table">{{item.Text2}}</td>
-        <td class="profile-table">  {{item.Text3}}</td>
-        <td class="profile-table">  {{item.Text4}}</td>
-        <td class="profile-table"> {{item.Text5}}</td>
+      <tr class="table-ngFor">
+        <td class="profile-table">{{Name}}</td>
+        <td class="profile-table">{{Surname}}</td>
+        <td class="profile-table">{{Age}}</td>
+        <td class="profile-table">{{Gender}}</td>
+        <td class="profile-table">{{Country}}</td>
       </tr>
     </div>
   </div>
+  <button class="update" (click)="Update()">Update</button>
 </div>

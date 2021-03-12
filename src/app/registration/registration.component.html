@@ -17,25 +17,7 @@
     <p>Were are you from?</p>
     <input class="input-reg" type="text" name="Country" placeholder="Something" size="30" [(ngModel)]="text5">
     <hr id="HrInDiv">
-    <input id="reg-button" type="button" value="Register" name="buttonClick" (click)="Push()">
+    <input id="reg-button" type="button" value="Register" name="buttonClick" (click)="Push(text1, text2, text3, text4, text5)">
   </div>
 </div>
 
-<div class="main-div-registration main-div-reg-second">
-  <div class="center-div-reg">
-    <tr>
-      <td class="td-output">Your enter:</td>
-      <td class="td-output">Your enter:</td>
-      <td class="td-output">Your enter:</td>
-      <td class="td-output">Your enter:</td>
-      <td class="td-output">Your enter:</td>
-    </tr>
-    <tr *ngFor="let item of items">
-      <td class="td-output">{{item.Text1 | uppercase}}</td>
-      <td class="td-output">{{item.Text2 | uppercase}}</td>
-      <td class="td-output">{{item.Text3 | number : '1.0-0'}}</td>
-      <td class="td-output">{{item.Text4 | lowercase}}</td>
-      <td class="td-output">{{item.Text5 | uppercase}}</td>
-    </tr>
-  </div>
-</div>
