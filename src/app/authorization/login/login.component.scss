@@ -1,4 +1,14 @@
 .main-div-container-profile{
+  background: black;
+  &.red{
+    background: linear-gradient(to bottom, #260300, red, #260300);
+  }
+  &.blue{
+    background: linear-gradient(to top, #260300, blue, #260300);
+  }
+  &.black{
+    background: linear-gradient(to top, #260300, black, #260300);
+  }
  }
 .main-div-login{
   width: 100%;
@@ -24,5 +34,4 @@
   border-radius: 30px;
 }
 .update{
-  color: white;
 }

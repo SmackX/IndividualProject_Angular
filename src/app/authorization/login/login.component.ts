@@ -1,17 +1,20 @@
-import { Component, OnInit } from '@angular/core';
-import {ShareDataService} from '../share-data.service';
+import {Component, Input, OnInit} from '@angular/core';
+import { ShareDataService } from '../../share-data.service';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss']
+  styleUrls: ['./login.component.scss'],
+  providers: [ShareDataService]
 })
 export class LoginComponent implements OnInit {
+
   Name = '';
   Surname = '';
   Age = '';
   Gender = '';
   Country = '';
+  profileColor: string;
   profileImage = 'https://meetanentrepreneur.lu/wp-content/uploads/2019/08/profil-linkedin-300x300.jpg';
   svcNew: ShareDataService;
   constructor(svc: ShareDataService) {
@@ -24,6 +27,7 @@ export class LoginComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    console.log('Hello from ngOnInit!');
   }
   // tslint:disable-next-line:typedef
   Update(){

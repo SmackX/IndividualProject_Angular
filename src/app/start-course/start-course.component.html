@@ -1,6 +1,11 @@
-<h1 class="Name-Start"> Start Here! </h1>
+<div><h1 class="Name-Start"> Start Here! </h1>
   <br>
-<app-material></app-material>
-<app-material></app-material>
-<app-material></app-material>
-<app-material></app-material>
+<button class="visible" (click)="ChangeToggle()">visibility</button>
+  <br>
+<div *ngIf="toggle">
+  <app-material></app-material>
+  <app-material></app-material>
+  <app-material></app-material>
+  <app-material></app-material>
+</div>
+</div>

@@ -1,13 +1,13 @@
 import {Component, OnInit, Output} from '@angular/core';
 import * as EventEmitter from 'events';
-import {LoggingService} from '../logging.service';
-import {ShareDataService} from '../share-data.service';
+import {LoggingService} from '../../logging.service';
+import {ShareDataService} from '../../share-data.service';
 
 @Component({
   selector: 'app-registration',
   templateUrl: './registration.component.html',
   styleUrls: ['./registration.component.scss'],
-  providers: [LoggingService]
+  providers: [LoggingService, ShareDataService]
 })
 export class RegistrationComponent implements OnInit {
   public text1 = ' ';
@@ -15,7 +15,7 @@ export class RegistrationComponent implements OnInit {
   public text3 = ' ';
   public text4 = ' ';
   public text5 = ' ';
-  @Output() PushFromParent = new EventEmitter<{ Shere1: string, shere2: string, shere3: string, shere4: string, shere5: string }>();
+  @Output() PushFromParent = new EventEmitter();
 
   svcNew: ShareDataService;
   constructor(svc: ShareDataService, private logging: LoggingService) {

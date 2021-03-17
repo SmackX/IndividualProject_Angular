@@ -1,12 +1,16 @@
 <div class="main-div-login">
-  <div class="main-div-container-profile">
+  <div class="main-div-container-profile" [ngClass]="{
+    blue: profileColor === 'blue',
+    red: profileColor === 'red',
+    black: profileColor === 'black'
+  }">
     <div class="profile-div">
       <img src="{{profileImage}}">
     </div>
 
     <div class="profile-div">
       <tr class="table-ngFor">
-        <td class="profile-table">Name:   </td>
+        <td class="profile-table  ">Name:   </td>
         <td class="profile-table">Surname:</td>
         <td class="profile-table">Age:   </td>
         <td class="profile-table">Gender:</td>
@@ -22,4 +26,7 @@
     </div>
   </div>
   <button class="update" (click)="Update()">Update</button>
+  <button  (click)="profileColor = 'red'" >Set Red</button>
+  <button  (click)="profileColor = 'blue'">Set Blue</button>
+  <button  (click)="profileColor = 'black  '">Set Black</button>
 </div>

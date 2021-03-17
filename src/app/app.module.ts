@@ -12,8 +12,9 @@ import { StartCourseComponent } from './start-course/start-course.component';
 import { HomeComponent } from './home/home.component';
 import { MaterialComponent } from './start-course/material/material.component';
 import { AuthorizationComponent } from './authorization/authorization.component';
-import { RegistrationComponent } from './registration/registration.component';
-import { LoginComponent } from './login/login.component';
+import { RegistrationComponent } from './authorization/registration/registration.component';
+import { LoginComponent } from './authorization/login/login.component';
+import { ShareDataService } from './share-data.service';
 
 
 const appRouter: Routes = [
@@ -42,7 +43,7 @@ const appRouter: Routes = [
     FormsModule,
     RouterModule.forRoot(appRouter)
   ],
-  providers: [],
+  providers: [ShareDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
