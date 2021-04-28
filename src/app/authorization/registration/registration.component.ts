@@ -1,7 +1,8 @@
 import {Component, OnInit, Output} from '@angular/core';
 import * as EventEmitter from 'events';
-import {LoggingService} from '../../logging.service';
-import {ShareDataService} from '../../share-data.service';
+import {LoggingService} from '../../services/logging.service';
+import {ShareDataService} from '../../services/share-data.service';
+import {FormControl, FormGroup, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-registration',

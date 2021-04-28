@@ -4,10 +4,14 @@ import { Routes, RouterModule } from '@angular/router';
 
 import {AppComponent} from '../app.component';
 import {FormsModule} from '@angular/forms';
+import { InfoCourseComponent } from './info-course/info-course.component';
+import { InformComponent } from './inform/inform.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    InfoCourseComponent,
+    InformComponent
   ],
   imports: [
     BrowserModule,
